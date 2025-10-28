@@ -1,0 +1,56 @@
+###################################
+# Global ignores for NextPress repo
+###################################
+
+# OS / Editor trash
+.DS_Store
+Thumbs.db
+*.swp
+
+# Env secrets
+.env
+.env.*
+!backend/nextpress-api/src/main/resources/application-*.yml
+
+###################################
+# Backend (Spring Boot)
+###################################
+backend/nextpress-api/target/
+backend/nextpress-api/*.log
+backend/nextpress-api/.run/
+backend/nextpress-api/.idea/
+backend/nextpress-api/.classpath
+backend/nextpress-api/.project
+backend/nextpress-api/.settings/
+backend/nextpress-api/.factorypath
+backend/nextpress-api/.vscode/
+backend/nextpress-api/.apt_generated
+backend/nextpress-api/sts4-cache/
+
+###################################
+# Frontend (Next.js)
+###################################
+frontend/nextpress/node_modules/
+frontend/nextpress/.next/
+frontend/nextpress/out/
+frontend/nextpress/build/
+frontend/nextpress/coverage/
+frontend/nextpress/.vercel/
+
+# Yarn / NPM debug
+frontend/nextpress/npm-debug.log*
+frontend/nextpress/yarn-debug.log*
+frontend/nextpress/yarn-error.log*
+frontend/nextpress/.pnpm-debug.log*
+
+# TypeScript cache
+frontend/nextpress/*.tsbuildinfo
+frontend/nextpress/next-env.d.ts
+
+###################################
+# Backup files
+###################################
+*.orig
+*.tmp
+*.bak
+.vscode/settings.json
